@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/hashicorp/terraform-plugin-sdk/plugin"
-	"github.com/jianyuan/terraform-provider-sentry/sentry"
+	"github.com/elephant3/terraform-provider-sentry/sentry"
 )
 
 func main() {

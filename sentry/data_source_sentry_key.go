@@ -5,7 +5,7 @@ import (
 	"log"
 
 	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
-	"github.com/jianyuan/go-sentry/sentry"
+	"github.com/elephant3/go-sentry/sentry"
 )
 
 func dataSourceSentryKey() *schema.Resource {

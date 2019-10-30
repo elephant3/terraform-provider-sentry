@@ -1,6 +1,6 @@
 # terraform-provider-sentry
-[![CircleCI](https://circleci.com/gh/jianyuan/terraform-provider-sentry/tree/master.svg?style=svg)](https://circleci.com/gh/jianyuan/terraform-provider-sentry/tree/master)
-[![Go Report Card](https://goreportcard.com/badge/github.com/jianyuan/terraform-provider-sentry)](https://goreportcard.com/report/github.com/jianyuan/terraform-provider-sentry)
+[![CircleCI](https://circleci.com/gh/elephant3/terraform-provider-sentry/tree/master.svg?style=svg)](https://circleci.com/gh/elephant3/terraform-provider-sentry/tree/master)
+[![Go Report Card](https://goreportcard.com/badge/github.com/elephant3/terraform-provider-sentry)](https://goreportcard.com/report/github.com/elephant3/terraform-provider-sentry)
 
 Terraform provider for [Sentry](https://sentry.io).
 
@@ -8,7 +8,7 @@ Terraform provider for [Sentry](https://sentry.io).
 
 See the [the Provider Configuration page of the Terraform documentation](https://www.terraform.io/docs/configuration/providers.html#third-party-plugins) for instructions.
 
-Pre-compiled binaries are available from the [Releases](https://github.com/jianyuan/terraform-provider-sentry/releases) page.
+Pre-compiled binaries are available from the [Releases](https://github.com/elephant3/terraform-provider-sentry/releases) page.
 
 ## Usage
 

@@ -3,8 +3,8 @@ package sentry
 import (
 	"log"
 
+	"github.com/elephant3/go-sentry/sentry"
 	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
-	"github.com/jianyuan/go-sentry/sentry"
 )
 
 func resourceSentryOrganization() *schema.Resource {
@@ -29,11 +29,6 @@ func resourceSentryOrganization() *schema.Resource {
 				Description: "The unique URL slug for this organization",
 				Computed:    true,
 			},
-			"agree_terms": {
-				Type:        schema.TypeBool,
-				Required:    true,
-				Description: "You agree to the applicable terms of service and privacy policy",
-			},
 		},
 	}
 }
@@ -42,9 +37,9 @@ func resourceSentryOrganizationCreate(d *schema.ResourceData, meta interface{}) 
 	client := meta.(*sentry.Client)
 
 	params := &sentry.CreateOrganizationParams{
-		Name:       d.Get("name").(string),
-		Slug:       d.Get("slug").(string),
-		AgreeTerms: sentry.Bool(d.Get("agree_terms").(bool)),
+		Name: d.Get("name").(string),
+		Slug: d.Get("slug").(string),
+		// AgreeTerms: sentry.Bool(d.Get("agree_terms").(bool)),
 	}
 	log.Printf("[DEBUG] Creating Sentry organization %s", params.Name)
 

@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-sdk/helper/resource"
 	"github.com/hashicorp/terraform-plugin-sdk/terraform"
-	"github.com/jianyuan/go-sentry/sentry"
+	"github.com/elephant3/go-sentry/sentry"
 )
 
 func TestAccSentryProject_basic(t *testing.T) {
